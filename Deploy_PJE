@@ -1,3 +1,55 @@
-# Procedimento de realização de deploy do PJE 2.0 (Produção)
+# Procedimento de realização de deploy do PJE 2.0 (Produção) 
 
 
+
+
+---
+## __*REQUISITOS:*__
+
+
+
+* Existência de requisição com a solicitação de deploy
+
+* Ferramenta "Putty" ou "Terminal Linux" disponível na máquina
+
+* Acesso ao portal do WildFly: dc-pje.tjdft.jus.br
+
+* Usuário com permissão para se conectar e executar comandos nas máquinas: TJSU100 (acesso as instâncias do PJE), BDU110 (PostGres PJe1i) e BDU113 (PostGres PJe 2i).
+
+* Login do usuário cadastrado no grupo "sudoers" (grupo de superusuários)
+
+* Caso haja solicitação de execução de script no banco de dados, veja algumas orientações do NUBAD: clique [aqui.]()
+
+* Caso seja necessário acesso aos arquivos de configuração do PJE, veja a relação de todos hosts e endereços [aqui.]()
+
+### __Atenção__: 
+
+ - Antes de atuar, verifique se foram observados, no fluxo de atendimento, todos os critérios para processar este tipo de requisição. Veja o fluxo [aqui.]()
+
+---
+
+ ## __ATUAÇÃO:__
+
+
+
+1- Parar as instâncias especificadas para o deploy e conferir:
+
+
+
+a) Acessar o portal  **WildFly** <http://dc-pje.tjdft.jus.br/console/App.html>,  clicar em: *__Runtime Server Groups__* selecionar o grupo requerido abrir a lista *__View__* e clicar sobre a opção *__Stop__*, conforme imagem abaixo:
+
+![par pje](C:\ghr-projetos\TJDFT\Deploy_PJE)
+
+ 
+b) Confirmar se os ambientes realmente pararam:
+
+Obs: Há scripts na __MIPU100__ para checar o status das instâncias e para matar processos, se necessário, vide abaixo.
+
+
+c) Logar na MIPU34 como root e executar o comando:
+
+/root/verificar-instancia-java-<ambiente>.sh
+
+
+
+[def]: C:/ghr-projetos/TJDFT/assets/Parar_pje.png
