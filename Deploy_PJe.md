@@ -24,7 +24,7 @@
 
 
 
-### __Atenção__: 
+### __*Atenção*__: 
 
  - Antes de atuar, verifique se foram observados, no fluxo de atendimento, todos os critérios para processar este tipo de requisição. Veja o fluxo [aqui.]()
 
@@ -33,7 +33,7 @@
 
 <!-- ATUAÇÃO  -->
 
- ### __ATUAÇÃO:__
+ ### __*ATUAÇÃO:*__
 
 
 
