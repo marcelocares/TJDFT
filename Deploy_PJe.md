@@ -8,7 +8,7 @@
 
 
 
-* Existência de requisição com a solicitação de deploy
+* Existência de requisição com a solicitação de deployy
 
 * Ferramenta "Putty" ou "Terminal Linux" disponível na máquina
 
